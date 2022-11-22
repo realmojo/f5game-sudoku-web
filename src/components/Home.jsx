@@ -19,6 +19,9 @@ export const Home = () => {
   return (
     <div>
       <div className="play-container">
+        <div className="text-center mt-3">
+          <h1>스도쿠 퍼즐게임</h1>
+        </div>
         <div style={{ textAlign: "center", paddingTop: 40 }}>
           <Image
             src="https://f5game.s3.ap-northeast-2.amazonaws.com/sudoku.png"
@@ -40,7 +43,7 @@ export const Home = () => {
 
         <article>
           <div className="post">
-            <h1>스도쿠를 즐겨보세요</h1>
+            <h2>스도쿠를 즐겨보세요</h2>
             <p>
               누구나 한 번쯤은 풀어봤을 법한 두뇌 게임 ‘스도쿠’. 하지만 단순히
               푸는 것뿐만 아니라 어떻게 하면 더 빨리 풀 수 있을지 연구한다면
@@ -55,7 +58,7 @@ export const Home = () => {
             </p>
           </div>
           <div className="post">
-            <h1>스도쿠에 대하여</h1>
+            <h2>스도쿠에 대하여</h2>
             <p>
               가로 세로 9칸씩 총 81칸으로 이루어진 정사각형의 빈칸에 1부터
               9까지의 숫자를 채워 넣는 퍼즐 게임입니다. 스도쿠는 수학자
@@ -65,7 +68,7 @@ export const Home = () => {
             </p>
           </div>
           <div className="post">
-            <h1>스도쿠 치매예방</h1>
+            <h2>스도쿠 치매예방</h2>
             <p>
               요즘 들어 머리 쓸 일이 별로 없어서 그런지 가끔가다 두뇌회전이
               필요할 때가 있다. 그럴 때마다 나는 어렸을 적 즐겨 하던 스도쿠를
