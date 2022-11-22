@@ -1,20 +1,23 @@
-import AdSense from "react-adsense";
+import { useEffect } from "react";
 
-export const SudokuAdsenseClear = () => {
+export const AdsenseClear = () => {
   const isProduction = process.env.NODE_ENV === "production" ? true : false;
+
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, []);
 
   return (
     <>
       {isProduction ? (
-        <div className="text-center">
-          <AdSense.Google
-            style={{ display: "block" }}
-            client="ca-pub-9130836798889522"
-            slot="1398986853"
-            format="auto"
-            responsive="true"
-          />
-        </div>
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-9130836798889522"
+          data-ad-slot="1398986853"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       ) : (
         <div
           style={{

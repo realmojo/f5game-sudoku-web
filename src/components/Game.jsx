@@ -8,8 +8,8 @@ import { easy } from "./assets/easy";
 import { normal } from "./assets/normal";
 import { hard } from "./assets/hard";
 import { crazy } from "./assets/crazy";
-import { SudokuAdsensePlay } from "./adsense/play";
-import { SudokuAdsenseClear } from "./adsense/clear";
+import { AdsensePlay } from "./adsense/play";
+import { AdsenseClear } from "./adsense/clear";
 
 const isNumber = (s) => {
   s += ""; // 문자열로 변환
@@ -451,7 +451,7 @@ export const Game = () => {
         </div>
       </div>
       <div className="my-4">
-        <SudokuAdsensePlay />
+        <AdsensePlay />
       </div>
 
       <Modal
@@ -472,7 +472,7 @@ export const Game = () => {
             : ""
         }
       >
-        <SudokuAdsenseClear />
+        <AdsenseClear />
       </Modal>
     </div>
   );

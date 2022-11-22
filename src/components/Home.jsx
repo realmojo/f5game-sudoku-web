@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Image } from "antd";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { SudokuAdsenseMain } from "./adsense/main";
+import { AdsenseMain } from "./adsense/main";
 
 const types = ["easy", "normal", "hard", "crazy"];
 
@@ -27,7 +27,7 @@ export const Home = () => {
             preview={false}
           />
         </div>
-        {isAdsense ? <SudokuAdsenseMain /> : ""}
+        {isAdsense ? <AdsenseMain /> : ""}
         <div>
           {types.map((item) => (
             <Link className="btn-list" key={item} to={`/game/sudoku/${item}`}>

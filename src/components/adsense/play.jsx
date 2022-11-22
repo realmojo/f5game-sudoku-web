@@ -1,6 +1,6 @@
 import AdSense from "react-adsense";
 
-export const SudokuAdsensePlay = () => {
+export const AdsensePlay = () => {
   const isProduction = process.env.NODE_ENV === "production" ? true : false;
 
   return (
