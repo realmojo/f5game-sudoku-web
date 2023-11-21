@@ -2,20 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Image } from "antd";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { AdsenseMain } from "./adsense/main";
-
 const types = ["easy", "normal", "hard", "crazy"];
 
 export const Home = () => {
-  const [isAdsense, setIsAdsense] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsAdsense(true);
-    }, 100);
-    return setIsAdsense(false);
-  }, []);
-
   return (
     <div>
       <div className="play-container">
@@ -30,7 +19,6 @@ export const Home = () => {
             preview={false}
           />
         </div>
-        {isAdsense ? <AdsenseMain /> : ""}
         <div>
           {types.map((item) => (
             <Link className="btn-list" key={item} to={`/game/sudoku/${item}`}>
